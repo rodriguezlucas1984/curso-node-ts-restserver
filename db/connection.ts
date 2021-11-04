@@ -7,7 +7,7 @@ const db = new Sequelize(
   process.env.USER_DB || "root",
   process.env.PASSWORD_DB || "test",
   {
-    host: "localhost",
+    host: process.env.HOST_DB || "localhost",
     dialect: "mysql",
     //loggin: false
   }
